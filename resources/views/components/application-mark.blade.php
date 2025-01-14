@@ -1,0 +1,1 @@
+<img class="h-8 w-auto" src="{{ asset('assets/logo.png') }}" alt="Akarat" >

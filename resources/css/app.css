@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+/* Register and Login Background */
+.bg-register {
+    background-image: 
+        linear-gradient(to right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.2) 90%, rgba(15, 23, 42, 0) 100%), 
+        url('../../public/assets/bgee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+.bg-register::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
+    /* The gradient fades from dark to transparent */
+    z-index: 1;
+}
+
+.bg-register > * {
+    position: relative;
+    z-index: 2;
+}
+
+/*End :  Register and Login Background */
